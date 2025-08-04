@@ -4,26 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luz y Vida - Geriátrico</title>
+
     <style>
-        body{
-            padding: 0;
-            margin: 0;
+        body {
             background-color: white;
-            
+            color: black;
         }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: white; /* Si el dispositivo está en modo oscuro, el fondo será blanco */
-                color: black; /* Si el dispositivo está en modo oscuro, el texto será negro */
-            }
+        main {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
         }
+
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a img {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: none;
+            transition: transform 0.2s;
+            object-fit: contain;
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.08);
+        }
+
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
 </head>
 <body>
     <main>
         <h1>Geriátrico Luz y Vida</h1>
-        <p>Próximamente...</p>
+        <h2>Próximamente...</h2>
+        <section class="social-icons">
+            <a href="#" target="_blank" title="WhatsApp">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Icono de Whatsapp">
+            </a>
+            <a href="#" target="_blank" title="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Icono de Facebook">
+            </a>
+            <a href="#" target="_blank" title="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Icono de Instagram">
+            </a>
+        </section>
     </main>
 </body>
 </html>
+
+<!-- <a href="https://wa.me/tunumerodetelefono" target="_blank" class="social-button whatsapp"></a> -->
