@@ -65,11 +65,18 @@
         }
 
         @media (prefers-color-scheme: dark) {
-        body {
-          background-color: rgb(36, 36, 36);
-          color: rgb(255, 255, 255);
+            body {
+            background-color: rgb(36, 36, 36);
+            color: rgb(255, 255, 255);
+            }
         }
-      }
+        @media (max-width: 480px) {
+            .social-icons a img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
     </style>
     <meta name="description" content="Nos adaptamos a tus necesidades, brindándote compañía, atención y cuidado.">
     <meta property="og:url" content="https://luzyvidalanding.netlify.app/">
@@ -97,7 +104,7 @@
                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Icono de Facebook">
             </a>
             <a href="https://www.instagram.com/residencial_luz_y_vida/" target="_blank" title="Instagram">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Icono de Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icono de Instagram" style="background:none;">
             </a>
             <a href="mailto:rrssluzyvida@gmail.com?subject=Consulta%20sobre%20Residencial%20Luz%20y%20Vida" target="_blank" title="Mail">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Icono de Mail">
