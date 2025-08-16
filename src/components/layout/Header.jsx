@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <>
-      <header className="text-white fixed top-0 w-full h-18 flex m-0 p-0 flex-col z-50">
+      <header className="bg-[var(--background-color)] text-white fixed top-0 w-full h-18 flex m-0 p-0 flex-col z-50">
         <div
           id='notch'
           className='fixed left-1/2 -translate-x-1/2 top-0 flex items-center justify-center'
@@ -12,6 +12,7 @@ function Header() {
         </div>
         <section className='flex mx-2 justify-between items-center h-full pt-3'>
             <img src="/imgs/isologo.svg" alt="Isologo de Luz y Vida" className='w-20'/>
+            <h1 className='text-[var(--primary-color)] font-black'>Luz Y Vida</h1>
             <img src="/imgs/menu.svg" alt="Icono de Menu" className='w-15'/>
         </section>
       </header>
