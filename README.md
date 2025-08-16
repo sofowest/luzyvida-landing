@@ -55,7 +55,7 @@ pnpm run dev
 En consola aparecerá un mensaje similar al siguiente 
 
 <p align="left">
-    <img src="https://i.imgur.com/3txyhw0.png" width="300px" alt="Consol log de npm run dev">
+    <img src="https://i.imgur.com/3txyhw0.png" width="250px" alt="Consol log de npm run dev">
 </p>
 
 Iremos al puerto que indique la consola.
