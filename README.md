@@ -4,7 +4,7 @@ Página creada con React y TailwindCSS (entre otras librerias y plugins mismo de
 
 ## Ejecución de entorno de desarrollo
 
-Para ejecutar el proyecto luego clonado el repositorio, hay que tener instalado Node.js. En caso tal que no lo tengas, instalalo en [este link.](https://nodejs.org/en/download)
+Para ejecutar el proyecto luego clonado el repositorio, hay que tener instalado Node.js, un instalador de paquetes. En caso tal que no lo tengas, instalalo en [este link.](https://nodejs.org/en/download)
 
 Ya instalado Node.js:
 
@@ -12,7 +12,17 @@ Ya instalado Node.js:
 
 Usa tu consola de confianza, yo en mi caso uso Git Bash o Warp. Para evitar problemas, ejecuta la consola en modo administrador.
 
-### 2. Instalar las Dependencias
+### 2. Ir al repositorio
+
+Ve al directorio donde tengas clonado el repositorio, en mi caso es la carpeta `dev`.
+
+```sh
+cd c
+cd dev
+cd luzyvida-landing
+```
+
+### 3. Instalar las Dependencias
 
 ```sh
 npm install
@@ -27,7 +37,7 @@ pnpm install
 Depende cuál versión tengas instalada (pnpm es una alternativa más rápida).
 
 
-### 3. Correr el entorno de desarrollo
+### 4. Correr el entorno de desarrollo
 
 ```sh
 npm run dev
@@ -40,7 +50,7 @@ pnpm run dev
 ```
 
 
-### 4. Ir al puerto mostrado
+### 5. Ir al puerto mostrado
 
 En consola aparecerá un mensaje similar al siguiente 
 
