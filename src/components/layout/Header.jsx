@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <>
-      <header className="bg-[var(--background-color)] text-white fixed top-0 w-full h-18 flex m-0 p-0 flex-col z-50">
+      <header className="bg-[var(--background-opacity-color)] backdrop-blur-sm text-white fixed top-0 w-full h-18 flex m-0 p-0 flex-col z-50">
         <div
           id='notch'
           className='fixed left-1/2 -translate-x-1/2 top-0 flex items-center justify-center'
