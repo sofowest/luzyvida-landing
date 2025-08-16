@@ -4,11 +4,15 @@ Página creada con React y TailwindCSS (entre otras librerias y plugins mismo de
 
 ## Ejecución de entorno de desarrollo
 
-Para ejecutar el proyecto luego clonado el repositorio, hay que tener instalado Node.js. En caso tal que no lo tengas, instalalo en [este link](https://nodejs.org/en/download)
+Para ejecutar el proyecto luego clonado el repositorio, hay que tener instalado Node.js. En caso tal que no lo tengas, instalalo en [este link.](https://nodejs.org/en/download)
 
-Prosigamos.
+Ya instalado Node.js:
 
-1. Instalar las Dependencias
+### 1. Abre la consola
+
+Usa tu consola de confianza, yo en mi caso uso Git Bash o Warp. Para evitar problemas, ejecuta la consola en modo administrador.
+
+### 2. Instalar las Dependencias
 
 ```sh
 npm install
@@ -20,9 +24,10 @@ o
 pnpm install
 ```
 
-Depende cual version tengas instalada (pnpm es una alternativa más rápida)
+Depende cuál versión tengas instalada (pnpm es una alternativa más rápida).
 
-2. Correr el entorno de desarrollo
+
+### 3. Correr el entorno de desarrollo
 
 ```sh
 npm run dev
@@ -34,12 +39,13 @@ o
 pnpm run dev
 ```
 
-3. Ir al puerto mostrado
+
+### 4. Ir al puerto mostrado
 
 En consola aparecerá un mensaje similar al siguiente 
 
 <p align="center">
-    <img src="https://imgur.com/a/IHJ1eYL" width="100px" alt="Consol log de npm run dev">
+    <img src="https://i.imgur.com/3txyhw0.png" width="100px" alt="Consol log de npm run dev">
 </p>
 
 Iremos al puerto que indique la consola.
@@ -48,7 +54,7 @@ La forma de detener la ejecución es apretando `CTRL + C` en la consola donde se
 
 ## Auxiliares
 
-### Revision de dependencias
+### Revisión de dependencias
 
 Por si querés ver qué dependencias tiene el proyecto y en que versión están, ejecuta el siguiente comando en la consola:
 
@@ -66,4 +72,4 @@ Te dará una lista detallada de version de los paquetes instalados.
 
 ### Log de cambios in real time
 
-Si ves la consola donde corriste el entorno de desarrollo, se imprimiran los cambios que hagas en los archivos de la página.
+Si ves la consola donde corriste el entorno de desarrollo, se imprimirán los cambios que hagas en los archivos del repositorio local.
