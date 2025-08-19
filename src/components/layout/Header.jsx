@@ -1,4 +1,3 @@
-import React from 'react';
 // import { useLocation } from 'react-router-dom';
 import useWindowWidth from '../../hooks/useWindowWidth.js';
 import DesktopNavbar from '../ui/DesktopNavbar.jsx';
