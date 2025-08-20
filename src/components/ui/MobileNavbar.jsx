@@ -9,13 +9,13 @@ function MobileNavbar() {
   return (
     <nav className="flex mx-3 justify-between items-center h-full pt-3">
       <div className="flex items-center justify-between w-full">
-        <Link to="/"><img src="/imgs/isologo.svg" alt="Isologo de Luz y Vida" className="w-12 h-12" /></Link>
+        <Link to="/"><img src="/images/isologo.svg" alt="Isologo de Luz y Vida" className="w-12 h-12" /></Link>
         <h1 className='text-[var(--primary-color)] font-bold'>LUZ Y VIDA</h1>
         <button onClick={toggleMenu} className="w-12 h-12">
           {isOpen ? (
-            <img src="/imgs/close.svg" alt="Cerrar menú" className="w-full h-full bg-none" />
+            <img src="/images/close.svg" alt="Cerrar menú" className="w-full h-full bg-none" />
           ) : (
-            <img src="/imgs/menu.svg" alt="Abrir menú" className="w-full h-full bg-none" />
+            <img src="/images/menu.svg" alt="Abrir menú" className="w-full h-full bg-none" />
           )}
         </button>
       </div>

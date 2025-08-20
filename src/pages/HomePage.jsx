@@ -14,13 +14,13 @@ function HomePage() {
               <div className="w-full h-full grid grid-cols-3 md:grid-cols-5 grid-rows-2 md:grid-rows-4 gap-2 md:gap-2">
                 <div className="col-start-1 row-start-1 col-span-2 bg-gray-300 rounded-md h-full
                                 md:col-start-1 md:row-start-1 md:col-span-3 md:row-span-2 ">
-                  <img src="/imgs/auxiliar/vento-img-inicio-1-a.webp" alt="" className="w-full h-full object-cover rounded-md"/>
+                  <img src="/images/vento-img-inicio-1-a.webp" alt="" className="w-full h-full object-cover rounded-md"/>
                 </div>
                 <div className="col-start-1 row-start-2 col-span-2 md:col-start-1 md:row-start-3 md:col-span-3 md:row-span-2 bg-gray-300 rounded-md h-full">
-                  <img src="/imgs/vento-img-inicio-2.webp" alt="" className="w-full h-full object-cover rounded-md"/>
+                  <img src="/images/vento-img-inicio-2.webp" alt="" className="w-full h-full object-cover rounded-md"/>
                 </div>
                 <div className="col-start-3 row-start-1 row-span-2 md:col-start-4 md:row-start-1 md:col-span-2 md:row-span-4 bg-gray-300 rounded-md h-full">
-                  <img src="/imgs/vento-img-inicio-3.webp" alt="" className="w-full h-full object-cover rounded-md"/>
+                  <img src="/images/vento-img-inicio-3.webp" alt="" className="w-full h-full object-cover rounded-md"/>
                 </div>
             </div>
           </section>
