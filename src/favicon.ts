@@ -8,8 +8,8 @@ const faviconElement = document.getElementById('favicon') as HTMLLinkElement | n
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 // Define las rutas de los favicons.
-const faviconLightPath = '/imgs/favicon-light.svg';
-const faviconDarkPath = '/imgs/favicon-primary.svg';
+const faviconLightPath = 'public/imgs/favicon-light.svg';
+const faviconDarkPath = 'public/imgs/favicon-primary.svg';
 
 /**
  * Función para actualizar el favicon.
