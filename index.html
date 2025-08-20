@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
-    <link id="favicon" rel="icon" href="public/imgs/favicon-light.svg" sizes="any" />
-    <link rel="apple-touch-icon" href="public/imgs/favicon-light.svg" />
+    <link id="favicon" rel="icon" href="public/imgs/icon-light.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="public/imgs/icon-light.svg" />
     <style>
         body {
             background-color: white;
@@ -27,10 +27,20 @@
             font-size: 1rem;
         }
 
+        #image-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         h1{
             font-size: 2.5rem;
             font-weight: 1000;
             margin: 0;
+        }
+
+        h3 {
+            color: #ffb400;
         }
 
         .social-icons {
@@ -67,8 +77,12 @@
 
         @media (prefers-color-scheme: dark) {
             body {
-            background-color: rgb(36, 36, 36);
-            color: rgb(255, 255, 255);
+                background-color: rgb(36, 36, 36);
+                color: white;
+            }
+
+            h3 {
+                color: rgb(223, 223, 223);
             }
         }
         @media (max-width: 480px) {
@@ -79,7 +93,7 @@
             }
         }
     </style>
-    <script src="src/favicon.ts"></script>
+    <script src="src/icon.ts"></script>
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="description" content="Nos adaptamos a tus necesidades, brindándote compañía, atención y cuidado.">
@@ -97,9 +111,10 @@
 </head>
 <body>
     <main>
+        <img id="image-logo" src="public/imgs/icon-light.svg" alt="Logo de luz y vida">
         <h1>Luz y Vida</h1>
         <h2>Residencial para adultos mayores</h2>
-        <h3>Próximamente!!</h3>
+        <h3>Próximamente...</h3>
         <section class="social-icons">
             <a href="https://wa.me/59898908672?text=Hola%20buenas.%20Me%20gustaría%20saber%20más%20sobre%20el%20Residencial%20Luz%20y%20Vida%21" target="_blank" title="WhatsApp">
                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Icono de Whatsapp">
