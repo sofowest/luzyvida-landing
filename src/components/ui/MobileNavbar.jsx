@@ -20,8 +20,8 @@ function MobileNavbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full shadow-lg p-4 bg-white">
-            <div className="flex flex-col mt-4 space-y-4 text-[var(--primary-color)] items-center bg-white">
+        <div className="absolute top-15 left-0 w-full shadow-lg p-5 bg-white">
+            <div className="flex flex-col mt-5 space-y-5 text-[var(--primary-color)] items-center bg-white">
                 <Link to="/" onClick={toggleMenu} className="w-full text-center hover:text-white hover:bg-[var(--primary-color)]">Inicio</Link>
                 <Link to="/servicios" onClick={toggleMenu} className="w-full text-center hover:text-white hover:bg-[var(--primary-color)]">Servicios</Link>
                 <Link to="/contacto" onClick={toggleMenu} className="w-full text-center hover:text-white hover:bg-[var(--primary-color)]">Nuestro Equipo</Link>
