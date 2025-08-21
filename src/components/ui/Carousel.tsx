@@ -52,15 +52,15 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       </div>
       <button
         onClick={goToPrevious}
-        className="w-11 h-11 p-1 absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
+        className="w-11 h-11 pr-1 absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
       >
-        &#9664;
+        <img src="/imgs/arrow.svg" alt="flecha izq" className="w-full h-full rotate-180"/>
       </button>
       <button
         onClick={goToNext}
-        className="w-11 h-11 p-1 absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
+        className="w-11 h-11 pl-1 absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
       >
-        &#9654;
+        <img src="/imgs/arrow.svg" alt="flecha derecha" className="w-full h-full"/>
       </button>
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
