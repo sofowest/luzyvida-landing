@@ -1,4 +1,17 @@
+import Carousel from '../components/ui/Carousel.tsx'
+
 function HomePage() {
+ // Define las rutas de las imágenes para el carrusel
+  const carouselImages = [
+    '/imgs/vento-img-inicio-1.webp',
+    '/imgs/vento-img-inicio-2.webp',
+    '/imgs/vento-img-inicio-3.webp',
+    '/imgs/vento-img-inicio-1.webp',
+    '/imgs/vento-img-inicio-2.webp',
+    '/imgs/vento-img-inicio-3.webp'
+    // Agrega más rutas de imágenes aquí si lo necesitas
+  ];
+
   return (
     <>
       <article id="article-1-home-page" className="h-dvh lg:flex lg:pt-[10vh]">
@@ -6,10 +19,10 @@ function HomePage() {
           <section className='h-[40vh] items-center justify-center text-balance pt-30 px-5 text-[var(--primary-color)] mb-8 relative lg:w-full lg:h-[50vh] lg:flex-col lg:pt-0 lg:px-0 lg:mb-0'>
               <p className="py-[1vh] text-lg lg:text-2xl lg:pb-3">Más que un residencial</p>
               <h1 className="text-[2.1rem] py-[1vh] leading-10 font-(family-name:--font-rubik) font-bold lg:text-[2.8rem] lg:leading-12 lg:relative lg:inset-y-[5%]">Un hogar hecho con mucho amor</h1>
-              <h2 className='text-lg w-[75vw] py-[1vh] lg:absolute lg:bottom-[5%] lg:w-full lg:text-2xl'>Donde el cuidado se convierte <br className="lg:hidden"/> en calidad de vida</h2>
+              <h2 className="text-lg w-[75vw] py-[1vh] lg:absolute lg:bottom-[5%] lg:w-full lg:text-2xl">Donde el cuidado se convierte <br className="lg:hidden"/> en calidad de vida</h2>
           </section>
           <section className="items-center justify-center flex h-[10vh] lg:flex-col lg:w-full lg:bottom-0 pt-[1vh]">
-            <button className='bg-[var(--primary-color)] block px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all lg:flex-col lg:w-full lg:rounded-2xl lg:text-2xl lg:h-full'>¡CONTÁCTANOS!</button>
+            <button className="bg-[var(--primary-color)] block px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all lg:flex-col lg:w-full lg:rounded-2xl lg:text-2xl lg:h-full">¡CONTÁCTANOS!</button>
           </section>
         </div>
         <section className="w-full h-[40vh] flex items-center justify-center px-5 my-10 lg:h-full lg:w-[50vw] lg:m-0">
@@ -28,8 +41,9 @@ function HomePage() {
         </section>
       </article>
 
-      <article className="h-dvh flex items-center justify-center bg-[var(--primary-color)]">
-          Contenedor Fait 2
+      <article className="h-dvh flex flex-col items-center justify-center bg-[var(--primary-color)]">
+          <h2 className="text-4xl p-10 font-bold font-(family-name:--font-rubik) text-[var(--secondary-color)]">Instalaciones</h2>
+          <Carousel images={carouselImages} />
       </article>
 
       <article className="h-dvh flex items-center justify-center bg-red-400">
