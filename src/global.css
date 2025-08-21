@@ -17,6 +17,8 @@
 
     --font-poppins: "Poppins", "Arial", "monospace";
     --font-rubik: "Rubik", "Helvetica", "monospace";
+
+    --shadow-carousel: -100px -3px 0px -30px #7B007B;
 }
 
 /* Poppins Font Faces */

@@ -41,8 +41,8 @@ function HomePage() {
         </section>
       </article>
 
-      <article className="h-dvh flex flex-col items-center justify-center bg-[var(--primary-color)]">
-          <h2 className="text-4xl p-10 font-bold font-(family-name:--font-rubik) text-[var(--secondary-color)]">Instalaciones</h2>
+      <article className="h-dvh flex flex-col items-center justify-center">
+          <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Instalaciones</h2>
           <Carousel images={carouselImages} />
       </article>
 

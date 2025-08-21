@@ -1,5 +1,4 @@
-// src/components/Carousel.tsx
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 interface CarouselProps {
   images: string[];
@@ -7,6 +6,8 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const goToNext = () => {
     setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
@@ -16,11 +17,28 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    const swipeThreshold = 50;
+
+    if (touchStartX.current - touchEndX.current > swipeThreshold) {
+      goToNext();
+    } else if (touchStartX.current - touchEndX.current < -swipeThreshold) {
+      goToPrevious();
+    }
+  };
+
   return (
-    <div className="relative overflow-hidden w-full max-w-4xl mx-auto h-150 shadow-xl">
+    <div className="relative overflow-hidden w-90 mx-0 h-[70dvh] rounded-xl shadow-[var(--shadow-carousel)] lg:h-[60dvh]">
       <div
         className="flex h-full transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        style={{transform: `translateX(-${current * 100}%)`}}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         {images.map((image, index) => (
           <div key={index} className="w-full flex-shrink-0 h-full">
@@ -34,13 +52,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       </div>
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white h-10 w-10 rounded-full hover:bg-opacity-75 transition"
+        className="w-11 h-11 p-1 absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
       >
         &#9664;
       </button>
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white h-10 w-10 rounded-full hover:bg-opacity-75 transition"
+        className="w-11 h-11 p-1 absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#01010193] bg-opacity-50 text-white rounded-full hover:bg-[#4b004ba2] transition"
       >
         &#9654;
       </button>
