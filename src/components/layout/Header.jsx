@@ -8,7 +8,7 @@ function Header() {
   const isMobile = windowWidth <= 768;
 
   return (
-    <header className="bg-[var(--background-opacity-color)] backdrop-blur-sm text-white fixed top-0 w-[100vw] h-18 flex m-0 p-0 flex-col z-50
+    <header className="bg-[var(--background-opacity-color)] shadow-md backdrop-blur-sm text-white fixed top-0 w-[100vw] h-18 flex m-0 p-0 flex-col z-50
                        md:bg-[var(--primary-color)] md:backdrop-blur-none md:h-20 md:w-full
                        lg:bg-[var(--primary-color)] lg:backdrop-blur-none lg:h-20
     ">
