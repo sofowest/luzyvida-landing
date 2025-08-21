@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <>
-      <article className="h-dvh lg:flex lg:pt-[10vh]">
+      <article id="article-1-home-page" className="h-dvh lg:flex lg:pt-[10vh]">
         <div className="flex flex-col h-[50vh] lg:h-full lg:w-[50vw] lg:justify-center lg:items-center lg:px-5">
           <section className='h-[40vh] items-center justify-center text-balance pt-30 px-5 text-[var(--primary-color)] mb-8 relative lg:w-full lg:h-[50vh] lg:flex-col lg:pt-0 lg:px-0 lg:mb-0'>
               <p className="py-[1vh] text-lg lg:text-2xl lg:pb-3">Más que un residencial</p>
@@ -9,7 +9,7 @@ function HomePage() {
               <h2 className='text-lg w-[75vw] py-[1vh] lg:absolute lg:bottom-[5%] lg:w-full lg:text-2xl'>Donde el cuidado se convierte <br className="lg:hidden"/> en calidad de vida</h2>
           </section>
           <section className="items-center justify-center flex h-[10vh] lg:flex-col lg:w-full lg:bottom-0 pt-[1vh]">
-            <button className='bg-[var(--primary-color)] block px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl lg:flex-col lg:w-full lg:rounded-2xl lg:text-2xl lg:h-full'>¡CONTÁCTANOS!</button>
+            <button className='bg-[var(--primary-color)] block px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all lg:flex-col lg:w-full lg:rounded-2xl lg:text-2xl lg:h-full'>¡CONTÁCTANOS!</button>
           </section>
         </div>
         <section className="w-full h-[40vh] flex items-center justify-center px-5 my-10 lg:h-full lg:w-[50vw] lg:m-0">
