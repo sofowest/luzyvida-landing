@@ -17,7 +17,6 @@ Usa tu consola de confianza, yo en mi caso uso Git Bash o Warp. Para evitar prob
 Ve al directorio donde tengas clonado el repositorio, en mi caso es la carpeta `dev`.
 
 ```sh
-cd c
 cd dev
 cd luzyvida-landing
 ```
