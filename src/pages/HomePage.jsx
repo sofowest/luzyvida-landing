@@ -41,13 +41,27 @@ function HomePage() {
         </section>
       </article>
 
-      <article className="h-dvh flex flex-col items-center justify-center">
-          <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Instalaciones</h2>
-          <Carousel images={carouselImages} />
+      <article className="h-dvh flex items-center justify-center">
+          <section className="flex flex-col items-center justify-center w-full h-full">
+            <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Instalaciones</h2>
+            <Carousel images={carouselImages} />
+          </section>
       </article>
 
-      <article className="h-dvh flex items-center justify-center bg-red-400">
-          Contenedor Fait 3
+      <article className="flex items-center justify-center bg-[--secondary-color]">
+        <section className='flex flex-col items-center justify-center w-full h-full py-10'>
+          <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Servicios</h2>
+          <div class="grid grid-cols-1 gap-5 m-4 grid-rows-14 md:grid-cols-4 md:grid-rows-6 md:gap-10">
+            <div class="col-start-1 row-start-1 row-span-2 md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">0</div>
+            <div class="col-start-1 row-start-3 row-span-2 md:col-start-2 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">1</div>
+            <div class="col-start-1 row-start-5 row-span-2 md:col-start-3 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">2</div>
+            <div class="col-start-1 row-start-7 row-span-2 md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">3</div>
+            <div class="col-start-1 row-start-9 row-span-2 md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">4</div>
+            <div class="col-start-1 row-start-11 row-span-2 md:col-start-3 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">5</div>
+            <div class="col-start-1 row-start-13 row-span-2 md:col-start-4 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">6</div>
+            <div class="col-start-1 row-start-15 row-span-2 md:col-start-4 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">7</div>
+          </div>
+        </section>
       </article>
     </>
   )
