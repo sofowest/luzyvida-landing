@@ -51,17 +51,56 @@ function HomePage() {
       <article className="flex items-center justify-center bg-[--secondary-color]">
         <section className='flex flex-col items-center justify-center w-full h-full py-10'>
           <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Servicios</h2>
-          <div class="grid grid-cols-1 gap-5 m-4 grid-rows-14 md:grid-cols-4 md:grid-rows-6 md:gap-10">
-            <div class="col-start-1 row-start-1 row-span-2 md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">0</div>
-            <div class="col-start-1 row-start-3 row-span-2 md:col-start-2 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">1</div>
-            <div class="col-start-1 row-start-5 row-span-2 md:col-start-3 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">2</div>
-            <div class="col-start-1 row-start-7 row-span-2 md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">3</div>
-            <div class="col-start-1 row-start-9 row-span-2 md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">4</div>
-            <div class="col-start-1 row-start-11 row-span-2 md:col-start-3 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">5</div>
-            <div class="col-start-1 row-start-13 row-span-2 md:col-start-4 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">6</div>
-            <div class="col-start-1 row-start-15 row-span-2 md:col-start-4 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md p-[15vh]">7</div>
-          </div>
+          <div class="grid grid-cols-1 gap-5 m-4 grid-rows-10 md:grid-cols-4 md:grid-rows-6 md:gap-10">
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-1 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Seguimiento médico personalizado</h3>
+              </section>
+            </div>
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-3 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Enfermería</h3>
+              </section>
+            </div>
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-5 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Especialistas en cocina</h3>
+              </section>
+            </div>
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-7 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Peluquería</h3>
+              </section>
+            </div>
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-9 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Celebración de días festivos</h3>
+              </section>
+            </div>
+            <div class="w-[80vw] h-[40vh] col-start-1 row-start-11 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+              <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
+                <h3 className="text-lg font-bold w-50">Actividades recreativas</h3>
+              </section>
+            </div>
+          </div> 
         </section>
+      </article>
+      <article className="h-dvh flex items-center justify-center">
+          <section className="flex flex-col items-center justify-center w-full h-full">
+            <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Pricing</h2>
+            <article>
+              <p className="text-lg text-center px-5 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec enim facilisis tincidunt. Sed euismod, nunc vel tincidunt facilisis, nisi nisl aliquet nisi, euismod aliquam nisi nisl euismod.</p>
+              <div className="flex flex-col items-center justify-center">
+                <button className="bg-[var(--primary-color)] px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all">Ver precios</button>
+              </div>
+            </article>
+          </section>
       </article>
     </>
   )
