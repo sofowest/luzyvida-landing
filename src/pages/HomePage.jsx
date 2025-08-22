@@ -14,7 +14,7 @@ function HomePage() {
 
   return (
     <>
-      <article id="article-1-home-page" className="h-dvh lg:flex lg:pt-[10vh]">
+      <article id="article-homepage" className="h-dvh lg:flex lg:pt-[10vh]">
         <div className="flex flex-col h-[50vh] lg:h-full lg:w-[50vw] lg:justify-center lg:items-center lg:px-5">
           <section className='h-[40vh] items-center justify-center text-balance pt-30 px-5 text-[var(--primary-color)] mb-8 relative lg:w-full lg:h-[50vh] lg:flex-col lg:pt-0 lg:px-0 lg:mb-0'>
               <p className="py-[1vh] text-lg lg:text-2xl lg:pb-3">Más que un residencial</p>
@@ -41,48 +41,48 @@ function HomePage() {
         </section>
       </article>
 
-      <article className="h-dvh flex items-center justify-center">
+      <article id="article-instalations" className="h-dvh flex items-center justify-center">
           <section className="flex flex-col items-center justify-center w-full h-full">
             <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Instalaciones</h2>
             <Carousel images={carouselImages} />
           </section>
       </article>
 
-      <article className="flex items-center justify-center bg-[--secondary-color]">
+      <article id="article-services" className="flex items-center justify-center bg-[--secondary-color] lg:items-center">
         <section className='flex flex-col items-center justify-center w-full h-full py-10'>
           <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Servicios</h2>
-          <div class="grid grid-cols-1 gap-5 m-4 grid-rows-10 md:grid-cols-4 md:grid-rows-6 md:gap-10">
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-1 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
-              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+          <div className="grid grid-cols-1 gap-5 m-4 grid-rows-10 md:grid-cols-3 md:grid-rows-6 md:gap-10">
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-1 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/services-2.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Seguimiento médico personalizado</h3>
               </section>
             </div>
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-3 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
-              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-3 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/services-2.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Enfermería</h3>
               </section>
             </div>
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-5 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
-              <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-5 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-1 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+              <img src="/imgs/services-3.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Especialistas en cocina</h3>
               </section>
             </div>
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-7 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-7 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-1 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
               <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Peluquería</h3>
               </section>
             </div>
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-9 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-9 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-2 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
               <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Celebración de días festivos</h3>
               </section>
             </div>
-            <div class="w-[80vw] h-[40vh] col-start-1 row-start-11 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
+            <div className="w-[80vw] h-[40vh] col-start-1 row-start-11 row-span-2 md:w-[20vw] md:h-[20vw] md:col-start-3 md:row-start-4 md:col-span-1 md:row-span-3 bg-gray-300 rounded-md relative">
               <img src="/imgs/vento-img-inicio-1.webp" alt="Empleadas de Luz Y Vida posando para una foto en conjunto" className="w-full h-full object-cover rounded-md"/>
               <section className="absolute bottom-0 h-[20%] bg-[#7b007bc0] bg-opacity-70 w-full text-center text-[var(--secondary-color)] rounded-b-md flex items-center justify-center">
                 <h3 className="text-lg font-bold w-50">Actividades recreativas</h3>
@@ -91,13 +91,26 @@ function HomePage() {
           </div> 
         </section>
       </article>
-      <article className="h-dvh flex items-center justify-center">
+
+      <article id="article-team" className="h-dvh flex items-center justify-center">
+          <section className="flex flex-col items-center justify-center w-full h-full">
+            <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Nuestro Equipo</h2>
+            <article>
+              <p className="text-lg text-center px-5 py-3">el carrusel acá</p>
+              <div className="flex flex-col items-center justify-center">
+                <button className="bg-[var(--primary-color)] px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all">botón inútil</button>
+              </div>
+            </article>
+          </section>
+      </article>
+
+      <article id="article-pricing" className="h-dvh flex items-center justify-center">
           <section className="flex flex-col items-center justify-center w-full h-full">
             <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Pricing</h2>
             <article>
               <p className="text-lg text-center px-5 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec enim facilisis tincidunt. Sed euismod, nunc vel tincidunt facilisis, nisi nisl aliquet nisi, euismod aliquam nisi nisl euismod.</p>
               <div className="flex flex-col items-center justify-center">
-                <button className="bg-[var(--primary-color)] px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all">Ver precios</button>
+                <button className="bg-[var(--primary-color)] px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all">otro botón inútil</button>
               </div>
             </article>
           </section>
