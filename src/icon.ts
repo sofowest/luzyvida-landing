@@ -3,8 +3,8 @@ const imageElement = document.getElementById('image-logo') as HTMLLinkElement | 
 
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-const faviconLightPath = 'public/imgs/icon-light.svg';
-const faviconDarkPath = 'public/imgs/icon-primary.svg';
+const faviconLightPath = '/imgs/icon-light.svg';
+const faviconDarkPath = '/imgs/icon-primary.svg';
 
 function updateFaviconAndLogo(isDark: boolean): void {
     if (faviconElement) {
