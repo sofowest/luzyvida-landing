@@ -4,11 +4,13 @@ import Header from './components/layout/Header.jsx'
 import HomePage from './pages/HomePage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
+      <Analytics />
       <main>
         <Routes>
           
