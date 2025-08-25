@@ -1,20 +1,31 @@
-import Carousel from '../components/ui/Carousel.tsx'
+import Carousel from '../components/ui/CarouselTeam.tsx'
 
 function HomePage() {
  // Define las rutas de las imágenes para el carrusel
-  const carouselImages = [
-    '/imgs/vento-img-inicio-1.webp',
-    '/imgs/vento-img-inicio-2.webp',
+
+  const isMobile = window.innerWidth <= 768;
+
+  const carouselInstallationsImages = [
+    '/imgs/installations-1.webp',
+    '/imgs/installations-2.webp',
+    '/imgs/installations-3.webp',
+    '/imgs/installations-4.webp',
+    '/imgs/installations-5.webp',
+    '/imgs/installations-6.webp'
+  ];
+
+  const carouselTeamImages = [
+    '/imgs/team-1.webp',
+    '/imgs/team-2.webp',
     '/imgs/vento-img-inicio-3.webp',
     '/imgs/vento-img-inicio-1.webp',
     '/imgs/vento-img-inicio-2.webp',
     '/imgs/vento-img-inicio-3.webp'
-    // Agrega más rutas de imágenes aquí si lo necesitas
   ];
 
   return (
     <>
-      <article id="article-homepage" className="h-vh pt-30 lg:flex lg:pt-[10vh]">
+      <article id="article-homepage" className="h-vh pt-20 lg:flex lg:pt-[10vh]">
         <div className="flex flex-col h-vh lg:h-full lg:w-[50vw] lg:justify-center lg:items-center lg:px-5">
           <section className='h-[200px] items-center justify-center text-balance px-5 text-[var(--primary-color)] mb-8 relative lg:w-full lg:h-[50vh] lg:flex-col lg:pt-0 lg:px-0 lg:mb-0'>
               <p className="py-[1vh] text-lg lg:text-2xl lg:pb-3">Más que un residencial</p>
@@ -25,7 +36,7 @@ function HomePage() {
             <button className="bg-[var(--primary-color)] block px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all lg:flex-col lg:w-full lg:rounded-2xl lg:text-2xl lg:h-full">¡CONTÁCTANOS!</button>
           </section>
         </div>
-        <section className="w-full h-[300px] flex items-center justify-center px-5 my-10 lg:h-full lg:w-[50vw] lg:m-0">
+        <section className="w-full h-[400px] flex items-center justify-center px-5 my-10 lg:h-full lg:w-[50vw] lg:m-0">
           <div className="w-full h-full grid grid-cols-3 md:grid-cols-5 grid-rows-2 md:grid-rows-4 gap-2 md:gap-2 lg:h-[60vh] lg:w-[50vw] lg:gap-5">
             <div className="col-start-1 row-start-1 col-span-2 bg-gray-300 rounded-md h-full
                             md:col-start-1 md:row-start-1 md:col-span-3 md:row-span-2 lg:rounded-2xl">
@@ -44,7 +55,7 @@ function HomePage() {
       <article id="article-instalations" className="h-dvh flex items-center justify-center">
           <section className="flex flex-col items-center justify-center w-full h-full">
             <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Instalaciones</h2>
-            <Carousel images={carouselImages} />
+            <Carousel images={carouselInstallationsImages} stylePreset='Installations'/>
           </section>
       </article>
 
@@ -93,14 +104,9 @@ function HomePage() {
       </article>
 
       <article id="article-team" className="h-dvh flex items-center justify-center">
-          <section className="flex flex-col items-center justify-center w-full h-full">
-            <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--primary-color)] h-[10dvh]">Nuestro Equipo</h2>
-            <article>
-              <p className="text-lg text-center px-5 py-3">el carrusel acá</p>
-              <div className="flex flex-col items-center justify-center">
-                <button className="bg-[var(--primary-color)] px-8 py-3 rounded-xl text-[var(--secondary-color)] font-bold text-2xl hover:scale-110 hover:bg-[#810081] transition-all">botón inútil</button>
-              </div>
-            </article>
+          <section className="flex flex-col items-center justify-center w-full h-full bg-[var(--primary-color)]">
+            <h2 className="text-5xl font-bold font-(family-name:--font-rubik) text-[var(--secondary-color)] h-[10dvh]">Nuestro Equipo</h2>
+            <Carousel images={carouselTeamImages} stylePreset='Team'/>
           </section>
       </article>
 
