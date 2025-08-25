@@ -1,13 +1,10 @@
 // import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
-import useWindowWidth from '../../hooks/useWindowWidth.js';
 import DesktopNavbar from '../ui/DesktopNavbar.jsx';
 import MobileNavbar from '../ui/MobileNavbar.jsx';
 
 function Header() {
-  const windowWidth = useWindowWidth();
-  const isMobile = windowWidth <= 768;
+  const isMobile = window.innerWidth <= 768;
 
   const [scrolled, setScrolled] = useState(false);
 
